@@ -55,6 +55,7 @@ class QtSampler(QWidget):
         super(QtSampler,self).__init__(*args, **kwargs)
         self.setParent(mayaMainWindow)
         self.setWindowFlags(Qt.Window)
+        self.setWindowTitle("Jmvs Ctrl Setup Tool")
         self.initUI()
         
         # - location to write commands to activate button..
