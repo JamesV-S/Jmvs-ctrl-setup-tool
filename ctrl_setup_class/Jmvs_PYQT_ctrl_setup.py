@@ -3,14 +3,14 @@
 import maya.cmds as cmds
 from maya import OpenMayaUI as omui
 
-from PySide2.QtCore import *
-from PySide2.QtGui import *
-#suggested fix from PySide2.QtWidgets import QWidget, QUiLoader, QApplication, QPushButton, QVBoxLayout, QFileDialog, QLabel, QSpinBox
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+#suggested fix from PySide6.QtWidgets import QWidget, QUiLoader, QApplication, QPushButton, QVBoxLayout, QFileDialog, QLabel, QSpinBox
 #class main_ui(QWidget):
-from PySide2.QtWidgets import QWidget
-from PySide2.QtWidgets import *
-from PySide2.QtUiTools import *
-from shiboken2 import wrapInstance
+from PySide6.QtWidgets import QWidget
+from PySide6.QtWidgets import *
+from PySide6.QtUiTools import *
+from shiboken6 import wrapInstance
 import os.path
 
 import sys
