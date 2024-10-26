@@ -15,10 +15,10 @@ import os.path
 
 import sys
 import importlib
-import find_driver_letter as driver
-importlib.reload(driver)
+from Jmvs_letter_driver_script import find_driver_letter 
+importlib.reload(find_driver_letter)
 
-A_driver = driver.get_folder_letter("Jmvs_current_file_path")
+A_driver = find_driver_letter.get_folder_letter("Jmvs_current_file_path")
 custom_path = f'{A_driver}My_RIGGING/JmvsSCRIPTS/Jmvs_ctrl_setup_tool/ui_scripts' # Jmvs_ctrl_setup_tool\ui_scripts
 another_path = f'{A_driver}My_RIGGING/JmvsSCRIPTS/Jmvs_ctrl_setup_tool'
 print(f"module imported from {custom_path}")
